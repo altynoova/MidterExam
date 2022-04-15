@@ -78,7 +78,6 @@ public class MainWindow extends JFrame implements ActionListener {
         });
         this.add(textField2);
 
-//        AddValue(startx, endx);
 
         JButton buttonGo = new JButton("GO!");
         buttonGo.setLayout(null);
@@ -89,7 +88,7 @@ public class MainWindow extends JFrame implements ActionListener {
 
         JButton buttonDraw = new JButton("DRAW FUNCTION");
         buttonDraw.setLayout(null);
-        buttonGo.setActionCommand(Actions.DRAW.name());
+        buttonDraw.setActionCommand(Actions.DRAW.name());
         buttonDraw.addActionListener(this);
         buttonDraw.setBounds(350, 70, 150, 40);
         this.add(buttonDraw);
@@ -122,7 +121,6 @@ public class MainWindow extends JFrame implements ActionListener {
         this.add(textArea1);
         textArea1.setVisible(false);
 
-
         this.setVisible(true);
     }
 
@@ -133,6 +131,7 @@ public class MainWindow extends JFrame implements ActionListener {
             textArea.setVisible(true);
         }
         if (e.getActionCommand() == Actions.DRAW.name()) {
+            System.out.println("lfdf");
             secondWindow = new SecondWindow();
         }
     }

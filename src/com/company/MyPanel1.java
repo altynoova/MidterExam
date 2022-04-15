@@ -13,7 +13,7 @@ public class MyPanel1  extends JPanel {
         width = getWidth();
         height = getHeight();
         Graphics2D g3 = (Graphics2D) g;
-        g3.setColor(Color.BLACK);
+        g3.setColor(Color.blue);
         g3.drawLine(width / 2, 0, width / 2, height);
         g3.drawLine(0, height / 2, width, height / 2);
         drawGrid(g3);
